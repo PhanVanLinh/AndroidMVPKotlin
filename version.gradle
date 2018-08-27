@@ -2,7 +2,7 @@ ext {
     kotlin_version = '1.2.60'
 
     dagger_version = '2.15'
-    retrofit_version = '2.3.0'
+    retrofit_version = '2.4.0'
     retrofit2_rxjava2_adapter_version = '1.0.0'
     okhttp_logging_interceptor_version = '3.9.1'
     rxjava_version = '2.1.10'

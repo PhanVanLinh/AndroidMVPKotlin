@@ -8,7 +8,7 @@ interface MainContract {
 
     interface Presenter {
 
-        fun getWeather()
+        fun getImage()
     }
 
 }

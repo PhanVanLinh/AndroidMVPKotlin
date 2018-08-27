@@ -42,18 +42,14 @@ android {
 
     applicationVariants.all { variant ->
         def BASE_URL = ""
-        def APP_ID = ""
 
         if (variant.getName().contains("develop")) {
-            BASE_URL = "https://samples.openweathermap.org"
-            APP_ID = "d24c2a2aa4eb9283978227cdb6d88afd"
+            BASE_URL = "http://10.0.2.2:8080"
         } else if (variant.getName().contains("production")) {
             BASE_URL = "2"
-            APP_ID = "1"
         }
 
         variant.buildConfigField "String", "BASE_URL", "\"${BASE_URL}\""
-        variant.buildConfigField "String", "APP_ID", "\"${APP_ID}\""
     }
 }
 
