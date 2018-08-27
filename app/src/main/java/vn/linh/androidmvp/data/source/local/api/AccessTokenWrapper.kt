@@ -1,9 +1,8 @@
 package vn.linh.androidmvp.data.source.local.api
 
 import vn.linh.androidmvp.data.model.AccessToken
-import javax.inject.Inject
 
-class AccessTokenWrapper @Inject constructor(private val sharedPrefApi: SharedPrefApi) {
+class AccessTokenWrapper constructor(private val sharedPrefApi: SharedPrefApi) {
     private var accessToken: AccessToken? = null
 
     fun getAccessToken(): AccessToken? {

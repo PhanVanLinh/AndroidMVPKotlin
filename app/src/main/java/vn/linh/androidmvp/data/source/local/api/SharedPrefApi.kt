@@ -4,10 +4,8 @@ import android.content.Context
 import android.content.SharedPreferences
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import javax.inject.Inject
 
-
-class SharedPrefApi @Inject constructor(context: Context, private val gson: Gson) {
+class SharedPrefApi constructor(context: Context, private val gson: Gson) {
     private val sharedPreferences: SharedPreferences
 
     init {
